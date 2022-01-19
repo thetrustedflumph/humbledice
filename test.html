@@ -13,7 +13,6 @@ $(function () {
         type: "get",
         dataType: "html",
         success: function (data) {
-            $('#data').text(data);
             $('#ajaxContent').html($(data).find('#contents').text());
         }
     });
