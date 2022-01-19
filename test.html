@@ -7,16 +7,9 @@
 <body style="width:1vw; height:1vh;margin:0;padding:0;">
 <div id="ajaxContent">Loading...</div>
 <script>
-// function home(){$('#content').load('https://docs.google.com/document/d/e/2PACX-1vRisG2UEKEUBAHt1iRx1DKg4-ckvm2LwTIYcMNOTVgxlPb3_TN6nNGt-uRo1uYOjMPqJGCr0YF5uOg7/pub table');}
-function home() {
-	$.get('https://docs.google.com/document/d/e/2PACX-1vRisG2UEKEUBAHt1iRx1DKg4-ckvm2LwTIYcMNOTVgxlPb3_TN6nNGt-uRo1uYOjMPqJGCr0YF5uOg7/pub', function(response) {
-		$("#ajaxContent").html($(response).find("#contents"));
-	});
-}
-</script>
-<script>
-// initialize homepage
-home();
+$.get('https://docs.google.com/document/d/e/2PACX-1vRisG2UEKEUBAHt1iRx1DKg4-ckvm2LwTIYcMNOTVgxlPb3_TN6nNGt-uRo1uYOjMPqJGCr0YF5uOg7/pub', function(response) {
+	$('#ajaxContent').html($(response).find("#contents"));
+});
 </script>
 </body>
 </html>
