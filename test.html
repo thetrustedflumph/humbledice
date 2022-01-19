@@ -10,7 +10,7 @@
 // function home(){$('#content').load('https://docs.google.com/document/d/e/2PACX-1vRisG2UEKEUBAHt1iRx1DKg4-ckvm2LwTIYcMNOTVgxlPb3_TN6nNGt-uRo1uYOjMPqJGCr0YF5uOg7/pub table');}
 function home(){
 	$.ajax({
-		url:'https://docs.google.com/document/d/e/2PACX-1vRisG2UEKEUBAHt1iRx1DKg4-ckvm2LwTIYcMNOTVgxlPb3_TN6nNGt-uRo1uYOjMPqJGCr0YF5uOg7/pub',
+		url:"https://docs.google.com/document/d/e/2PACX-1vRisG2UEKEUBAHt1iRx1DKg4-ckvm2LwTIYcMNOTVgxlPb3_TN6nNGt-uRo1uYOjMPqJGCr0YF5uOg7/pub",
 		success: function(response) {
 			$("#ajaxContent").html($(response).find("#contents"));
 		}
